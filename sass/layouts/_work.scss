@@ -31,7 +31,6 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
 }
 
 .work-list {
@@ -42,8 +41,7 @@
 .work-link {
     margin-right: 30px;
     width: 370px;
-}
-
-.work-link:nth-child(3n) {
-    margin-right: 0;
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
 }
