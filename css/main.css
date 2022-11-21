@@ -283,17 +283,17 @@ section {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.header-logo {
+.logo {
   padding-top: 24px;
   padding-bottom: 25px;
   font-family: "Raleway";
@@ -304,23 +304,23 @@ section {
   color: #000000;
 }
 
-.logo-link {
+.logo__link {
   color: var(--accent-color);
 }
 
-.header-list {
+.menu {
   display: flex;
   gap: 50px;
   margin-left: 93px;
 }
-.header-list :hover, .header-list :focus {
+.menu :hover, .menu :focus {
   color: var(--accent-color);
 }
 
-.header-list .current {
+.menu__link--current {
   color: var(--accent-color);
 }
-.header-list .current::after {
+.menu__link--current::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -331,14 +331,10 @@ section {
   border-radius: 2px;
 }
 
-.header-list .link {
+.menu__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  position: relative;
-}
-
-.header-link {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -348,17 +344,16 @@ section {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-connect {
+.connect {
   display: flex;
   gap: 50px;
   margin-left: auto;
 }
-.header-connect :hover, .header-connect :focus {
+.connect :hover, .connect :focus {
   color: var(--accent-color);
 }
 
-.header-mail {
-  display: inline-block;
+.connect__mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -367,8 +362,7 @@ section {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-tel {
-  display: inline-block;
+.connect__tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -377,13 +371,7 @@ section {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-mail-item {
-  margin-right: 10px;
-  fill: currentColor;
-  vertical-align: middle;
-}
-
-.header-phone-item {
+.connect__icon--start {
   margin-right: 10px;
   fill: currentColor;
   vertical-align: middle;
@@ -518,27 +506,11 @@ section {
   margin-right: 0;
 }
 
-.section-team {
+.section__team {
   background: #F5F4FA;
 }
 
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.team-link {
-  margin-right: 30px;
-  width: 270px;
-  background-color: var(--accent-text-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.team-link:nth-child(4n) {
-  margin-right: 0;
-}
-
-.team-title {
+.team__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -547,12 +519,28 @@ section {
   letter-spacing: 0.03em;
 }
 
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team__item {
+  margin-right: 30px;
+  width: 270px;
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .officer {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-post-title {
+.officer__post-title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -561,7 +549,7 @@ section {
   letter-spacing: 0.03em;
 }
 
-.team-paragraph {
+.officer__paragraph {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -570,18 +558,18 @@ section {
   margin-bottom: 16px;
 }
 
-.team-soc-list {
+.soc__list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.team-soc-item {
+.soc__item {
   width: 44px;
   height: 44px;
 }
 
-.team-soc-link {
+.officer-soc__link {
   width: 100%;
   height: 100%;
   color: var(--accent-text-color);
@@ -591,19 +579,19 @@ section {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-soc-link:hover, .team-soc-link:focus {
+.officer-soc__link:hover, .officer-soc__link:focus {
   background-color: var(--accent-color);
 }
 
-.team-soc-icon {
+.officer-soc__icon {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-soc-link:hover .team-soc-icon, .team-soc-link:focus .team-soc-icon {
+.officer-soc__link:hover .officer-soc__icon, .officer-soc__link:focus .officer-soc__icon {
   fill: var(--accent-text-color);
 }
 
-.section-clients {
+.section__clients {
   background-color: var(--accent-text-color);
 }
 
@@ -756,27 +744,12 @@ section {
   padding-bottom: 60px;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.footer-list {
-  margin-top: 20px;
-  gap: 10px;
-}
-.footer-list :hover, .footer-list :focus {
-  color: var(--accent-color);
-}
-
-.footer-item {
-  margin-bottom: 9px;
-}
-.footer-item:last-child {
-  margin-bottom: 0px;
-}
-
-.footer-logo {
+.footer__logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -786,7 +759,22 @@ section {
   color: var(--accent-text-color);
 }
 
-.footer-map {
+.address__list {
+  margin-top: 20px;
+  gap: 10px;
+}
+.address__list :hover, .address__list :focus {
+  color: var(--accent-color);
+}
+
+.address__item {
+  margin-bottom: 9px;
+}
+.address__item:last-child {
+  margin-bottom: 0px;
+}
+
+.address__map {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -794,7 +782,7 @@ section {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-mail {
+.address__mail {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -802,7 +790,7 @@ section {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-tel {
+.address__tel {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -810,11 +798,11 @@ section {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.invite-container {
+.invite__container {
   margin-left: 70px;
 }
 
-.invite-title {
+.invite__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -824,18 +812,18 @@ section {
   color: var(--accent-text-color);
 }
 
-.invite-soc-list {
+.soc__list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.invite-soc-item {
+.soc__item {
   width: 44px;
   height: 44px;
 }
 
-.invite-soc-link {
+.soc__link {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -845,11 +833,11 @@ section {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.invite-soc-link:hover, .invite-soc-link:focus {
+.soc__link:hover, .soc__link:focus {
   background-color: var(--accent-color);
 }
 
-.invite-soc-icon {
+.soc__icon {
   fill: var(--accent-text-color);
 }
 
