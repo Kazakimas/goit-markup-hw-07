@@ -1,8 +1,8 @@
-.section-work {
+.work {
     background: var(--accent-text-color);
 }
 
-.work-title {
+.work__heading {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -11,11 +11,11 @@
     letter-spacing: 0.03em;
 }
 
-.work-thumb {
+.picture__thumb {
     position: relative;
 }
 
-.work-post-title {
+.picture__post-title {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -33,12 +33,12 @@
     text-transform: uppercase;
 }
 
-.work-list {
+.picture__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.work-link {
+.picture__item {
     margin-right: 30px;
     width: 370px;
     &:nth-child(3n) {

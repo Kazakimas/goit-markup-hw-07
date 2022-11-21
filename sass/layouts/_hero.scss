@@ -1,4 +1,4 @@
-.section-hero {
+.hero {
     background-color: #2F303A;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
     margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -20,7 +20,7 @@
     text-transform: uppercase;
 }
 
-.hero-button {
+.hero__button {
     padding: 10px 32px;
     min-width: 216px;
     height: 50px;

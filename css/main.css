@@ -377,7 +377,7 @@ section {
   vertical-align: middle;
 }
 
-.section-hero {
+.hero {
   background-color: #2F303A;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
@@ -390,7 +390,7 @@ section {
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -399,7 +399,7 @@ section {
   text-transform: uppercase;
 }
 
-.hero-button {
+.hero__button {
   padding: 10px 32px;
   min-width: 216px;
   height: 50px;
@@ -416,22 +416,22 @@ section {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-button:hover, .hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   transform: scale(1.1);
 }
 
-.section-advances {
+.advances {
   background: var(--accent-text-color);
   padding-bottom: 0px;
 }
 
-.advances-list {
+.scroll__list {
   display: flex;
   align-items: flex-start;
   gap: 30px;
 }
 
-.advances-item-icon {
+.scroll__image {
   height: 120px;
   width: 270px;
   background-color: #F5F4FA;
@@ -441,7 +441,7 @@ section {
   justify-content: center;
 }
 
-.advances-post-title {
+.scroll__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -451,7 +451,7 @@ section {
   margin-top: 30px;
 }
 
-.advances-paragraph {
+.scroll__post-title {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.71;
@@ -459,11 +459,11 @@ section {
   color: var(--paragraph-color);
 }
 
-.section-work {
+.work {
   background: var(--accent-text-color);
 }
 
-.work-title {
+.work__heading {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -472,11 +472,11 @@ section {
   letter-spacing: 0.03em;
 }
 
-.work-thumb {
+.picture__thumb {
   position: relative;
 }
 
-.work-post-title {
+.picture__post-title {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -493,24 +493,24 @@ section {
   text-transform: uppercase;
 }
 
-.work-list {
+.picture__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.work-link {
+.picture__item {
   margin-right: 30px;
   width: 370px;
 }
-.work-link:nth-child(3n) {
+.picture__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.section__team {
+.team {
   background: #F5F4FA;
 }
 
-.team__title {
+.team__heading {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -519,28 +519,28 @@ section {
   letter-spacing: 0.03em;
 }
 
-.team {
+.people {
   display: flex;
   flex-wrap: wrap;
 }
 
-.team__item {
+.people__item {
   margin-right: 30px;
   width: 270px;
   background-color: var(--accent-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team__item:nth-child(4n) {
+.people__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.officer {
+.person {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.officer__post-title {
+.person__post-title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -549,7 +549,7 @@ section {
   letter-spacing: 0.03em;
 }
 
-.officer__paragraph {
+.person__paragraph {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -569,7 +569,7 @@ section {
   height: 44px;
 }
 
-.officer-soc__link {
+.person-soc__link {
   width: 100%;
   height: 100%;
   color: var(--accent-text-color);
@@ -579,23 +579,23 @@ section {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.officer-soc__link:hover, .officer-soc__link:focus {
+.person-soc__link:hover, .person-soc__link:focus {
   background-color: var(--accent-color);
 }
 
-.officer-soc__icon {
+.person-soc__icon {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.officer-soc__link:hover .officer-soc__icon, .officer-soc__link:focus .officer-soc__icon {
+.person-soc__link:hover .person-soc__icon, .person-soc__link:focus .person-soc__icon {
   fill: var(--accent-text-color);
 }
 
-.section__clients {
+.clients {
   background-color: var(--accent-text-color);
 }
 
-.clients-title {
+.clients__heading {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -604,17 +604,17 @@ section {
   letter-spacing: 0.03em;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   gap: 30px;
 }
 
-.clients-item {
+.clients__item {
   width: calc((100% - 150px) / 6);
   height: 92px;
 }
 
-.clients-link {
+.clients__link {
   height: 100%;
   width: 100%;
   border: 1px solid #AFB1B8;
@@ -624,35 +624,35 @@ section {
   justify-content: center;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link :hover, .clients-link :focus {
+.clients__link :hover, .clients__link :focus {
   border-color: var(--accent-color);
 }
 
-.clients-icon {
+.clients__icon {
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover .clients-icon, .clients-link:focus .clients-icon {
+.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
   fill: var(--accent-color);
 }
 
-.button-link {
+.button__link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-link:hover, .button-link:focus {
+.button__link:hover, .button__link:focus {
   color: var(--accent-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-.button-list {
+.button__list {
   display: flex;
   gap: 8px;
   margin-bottom: 50px;
   justify-content: center;
 }
 
-.button-link {
+.button__link {
   padding: 6px 22px;
   border: 0px;
   border-radius: 4px;
@@ -666,33 +666,33 @@ section {
   background-color: #F5F4FA;
 }
 
-.section-project {
+.project {
   background: var(--accent-text-color);
 }
 
-.project-list {
+.project__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.project-item {
+.project__item {
   margin-right: 30px;
   margin-bottom: 30px;
   background: var(--accent-text-color);
 }
-.project-item:nth-child(3n) {
+.project__item:nth-child(3n) {
   margin-right: 0;
 }
-.project-item:nth-last-child(-n+3) {
+.project__item:nth-last-child(-n+3) {
   margin-bottom: 0px;
 }
 
-.design {
+.project__design {
   border: 1px solid #EEEEEE;
   padding: 20px 24px;
 }
 
-.project-title {
+.project__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -700,27 +700,27 @@ section {
   color: var(--brand-color);
 }
 
-.project-paragraph {
+.project__paragraph {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
 }
 
-.project-link {
+.project__link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-link:hover, .project-link:focus {
+.project__link:hover, .project__link:focus {
   display: block;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.project-thumb {
+.project__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.project-text {
+.project__text {
   position: absolute;
   top: 0;
   height: 100%;
@@ -734,7 +734,7 @@ section {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-link:hover .project-text {
+.project__link:hover .project__text {
   transform: translateY(0);
 }
 
@@ -841,11 +841,11 @@ section {
   fill: var(--accent-text-color);
 }
 
-.sending {
+.send {
   margin-left: 93px;
 }
 
-.send-label {
+.send__label {
   font-family: inherit;
   font-weight: 700;
   font-size: 14px;
@@ -857,11 +857,11 @@ section {
   margin-bottom: 20px;
 }
 
-.send-wrap {
+.send__wrap {
   display: flex;
 }
 
-.send-input {
+.send__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -872,21 +872,21 @@ section {
   padding-left: 16px;
   color: var(--accent-text-color);
 }
-.send-input::-moz-placeholder {
+.send__input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.send-input:-ms-input-placeholder {
+.send__input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.send-input::placeholder {
+.send__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -894,7 +894,7 @@ section {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.send-button {
+.send__button {
   height: 50px;
   width: 200px;
   padding: 10px 28px;

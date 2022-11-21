@@ -103,11 +103,11 @@
     fill: var(--accent-text-color);
 }
 
-.sending {
+.send {
     margin-left: 93px;
 }
 
-.send-label {
+.send__label {
     font-family: inherit;
     font-weight: 700;
     font-size: 14px;
@@ -119,12 +119,12 @@
     margin-bottom: 20px;
 }
 
-.send-wrap {
+.send__wrap {
     display: flex;
 }
 
 
-.send-input {
+.send__input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -145,7 +145,7 @@
 
 
 
-.send-button {
+.send__button {
     height: 50px;
     width: 200px;
     padding: 10px 28px;
